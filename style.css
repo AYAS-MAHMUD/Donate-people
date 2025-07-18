@@ -181,7 +181,12 @@ main{
 
 @media screen and (max-width:576px) {
     .get-color input,.get-color button{
+        border-radius: 5px;
         font-size: 0.8rem;
+    }
+    .get-color{
+        flex-direction: column;
+        gap: 10px;
     }
     .get-update{
         margin: 30px 20px;
