@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 header{
     max-width: 1440px;
@@ -34,7 +35,7 @@ header{
 .Donate-btn{
     margin-top: 20px;
     font-size: 1.25rem;
-    width: 159px;
+    padding: 10px 20px;
     height: 54px;
     background-color: #FF5959;
     border: none;
@@ -81,13 +82,113 @@ main{
     outline: none;
     font-size: 1.26rem;
     margin-bottom: 5px;
+    text-align: center;
 }
 .donate-plan{
     margin-top: 80px;
+    margin-bottom: 80px;
+}
+/* Donate-plan */
+.box-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 24px;
+    margin-top: 50px;
+}
+.box-container .box{
+    padding: 63px 22px 54px 23px;
+    border-radius: 8px;
+}
+.box-container .box .box-title{
+    font-size: 1.5rem;
+}
+.box-container .box-1{
+    background-color: #4f9da632;
+}
+.box-container .box-2{
+    background-color: #ff59593b;
+}
+.box-container .box-3{
+    background-color: #0b27b12f;
+}
+/* dination */
+.donation-container{
+    display: flex;
+    gap: 83px;
+    margin-bottom: 80px;
+}
+.donation-container .text-title{
+    font-size: 2.8rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.donation-container .text-description{
+    margin-bottom: 10px;
+    color: rgb(71, 70, 70);
+}
+.donation-container .img{
+    width: 50%;
+}
+/* get-update */
+.get-update{
+    max-width: 803px;
+    margin: 0 auto;
+    text-align: center;
+}
+.get-update .get-title{
+    font-size: 3rem;
+}
+.get-update .get-description{
+    color: rgb(106, 104, 104);
+    margin-bottom: 50px;
+}
+.get-color{
+    max-width: 805px;
+    height: 200px;
+    background-color: #ff595957;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.get-color input{
+    font-size: 1.36rem;
+    padding: 10px 20px;
+    border: none;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.get-color button{
+    font-size: 1.36rem;
+    padding: 10px 20px;
+    border: none;
+    background-color: #FF5959;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: #fff;
+}
+.last{
+    margin-top: 130px;
+    width: 100%;
+    text-align: center;
+    height: 177px;
+    background-color: #0B0D17;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-
 @media screen and (max-width:576px) {
+    .get-color input,.get-color button{
+        font-size: 0.8rem;
+    }
+    .get-update{
+        margin: 30px 20px;
+    }
+    .get-update .get-title{
+    font-size: 2rem;
+    }
     .head-title{
         font-size: 2rem;
     }
@@ -110,6 +211,26 @@ main{
     }
     .donate-plan{
         margin: 10px 20px;
+    }
+    .box-container{
+        grid-template-columns: 1fr;
+    }
+    .donation-container{
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    }
+    .donation-container .img{
+    width: 100%;
+    }
+    .donation-container .text-title{
+        font-size: 2rem;
+    }
+    .donation{
+        margin: 20px;
+    }
+    .donation .another{
+        flex-direction: column-reverse;
     }
 
 }
