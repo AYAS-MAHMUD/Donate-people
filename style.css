@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: "Poppins";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    max-width: 1440px;
+    background: url(./images/donation6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 80px;
+}
+.head-container{
+    max-width: 1140px;
+    height: 100vh;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.head-title{
+    font-size: 4rem;
+    color: rgb(255, 255, 255);
+}
+.head-description{
+    font-size: 1.23rem;
+    color: #fff;
+
+}
+.Donate-btn{
+    margin-top: 20px;
+    font-size: 1.25rem;
+    width: 159px;
+    height: 54px;
+    background-color: #FF5959;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+}
+main{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.donate-section{
+    max-width: 800px;
+    margin: 0 auto;
+}
+.amount-section{
+    text-align: center;
+}
+.amount-section h1{
+    font-size: 3rem;
+}
+.amount-section p{
+    font-size: 1.1rem;
+}
+.btn-container{
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+.btn-container .taka{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: rgb(77, 75, 75);
+    margin: 0 auto;
+    height: 123px;
+    width: 135px;
+    border-radius: 5px;
+}
+.extra-amount{
+    margin-top: 50px;
+    text-align: center;
+}
+.extra-amount #inp{
+    border: none;
+    outline: none;
+    font-size: 1.26rem;
+    margin-bottom: 5px;
+}
+.donate-plan{
+    margin-top: 80px;
+}
+
+
+@media screen and (max-width:576px) {
+    .head-title{
+        font-size: 2rem;
+    }
+    .amount-section h1{
+    font-size: 2rem;
+    }
+    .btn-container .taka{
+        font-size: 1.11rem;
+        font-weight: 700;
+        color: rgb(77, 75, 75);
+        margin: 0 auto;
+        height: 63px;
+        width: 100px;
+    }
+    .btn-container{
+        gap: 10px;
+    }
+    .donate-section{
+        margin: 0 20px;
+    }
+    .donate-plan{
+        margin: 10px 20px;
+    }
+
+}
