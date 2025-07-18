@@ -187,7 +187,6 @@ main{
     .get-color{
         flex-direction: column;
         gap: 10px;
-        display: none;
     }
     .get-update{
         margin: 30px 20px;
